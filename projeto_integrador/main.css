@@ -1,0 +1,196 @@
+:root {
+    --body-color: #EBEBEB;
+    --dark-blue: #21272B;
+    --mid-blue: #1A3243;
+    --light-blue: #1BB4E8;
+    --light-brown: #C6B07F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    font-weight: 100;
+    margin: 0;
+}
+
+header {
+    background-color: var(--dark-blue);
+    color: white;
+    width: 100%;
+    padding: 15px 0 0 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-left {
+    font-style: italic;
+    display: flex;
+}
+
+#header-logo {
+    height: min-content;
+    margin-right: 12px;
+}
+
+#header-title {
+    margin-top: -5px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+}
+
+#blue {
+    color: var(--light-blue);
+}
+
+.menu-right{
+    align-self: flex-end;
+}
+
+.header-menu {
+    font-size: 1.5rem;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-menu > li {
+    margin-right: 25px;
+}
+
+.img-div {
+    background-image: url("images/barcoprincipal.jpg");
+    width: 100%;
+    height: 495px;
+    padding: 0 30px 50px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-square {
+    color: white;
+    font-size: 1.4rem;
+    width: 400px;
+    height: 247px;
+    padding: 20px;
+    background-color: var(--mid-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: flex-end;
+}
+
+#in-line-square {
+    font-size: 2.0rem;
+    display: flex;
+}
+
+#square-logo {
+    margin-top: 15px;
+    margin-right: 8px;
+    height: 50px;
+}
+
+#brown {
+    color: var(--light-brown);
+}
+
+.inf-div {
+    background-color: white;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inf-square {
+    width: 45%;
+    background-color: var(--body-color);
+}
+
+.square-txt {
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+#destinos {
+    font-style: italic;
+    color: white;
+    background-color: var(--light-blue);
+    display: flex;
+}
+
+#img-first-square {
+    width: 440px;
+    margin: 20px 0 0 5px;
+}
+
+#nossa-frota {
+    font-style: italic;
+    color: white;
+    background-color: var(--light-brown);
+    display: flex;
+}
+
+#nossa-frota > img {
+    height: min-content;
+    width: min-content;
+    margin: 5px 5px;
+}
+
+.galeria {
+    margin: 20px 0 0 5px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 5px;
+}
+
+.galeria > img {
+    width: 100%;
+}
+
+@media (max-width: 992px){
+    .inf-div {
+        flex-wrap: wrap;
+    }
+    .inf-square {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-square {
+        width: 80%;
+    }
+    #img-first-square {
+        width: 90%;
+    }
+}
+
+footer {
+    font-size: 1.2rem;
+    background-color: var(--body-color);
+    padding: 10px 0 10px 20px;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: var(--light-blue);
+}
